@@ -16,7 +16,7 @@ public class HomeWorkTest {
 
      @Test(dataProvider = "incomeprovider")
      public void checkTexesCalculation(int income, double expTax){
-         Assert.assertEquals(getTax(income), expTax * income,String.format("Texes s for %s should be %s", income, expTax));
+         Assert.assertEquals(getTax(income), expTax * income,String.format("Texes for %s should be %s", income, expTax));
      }
      @DataProvider
      public Object[][] incomeprovider(){return new Object[][]{
